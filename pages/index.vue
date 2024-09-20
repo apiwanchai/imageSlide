@@ -1,6 +1,4 @@
 <script setup>
-import { ref } from "vue";
-
 const images = ref([
   {
     src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
@@ -90,7 +88,8 @@ const loadMore = () => {
             type="button"
             :class="{
               'btn-custom btn-selected': selectedCategories.includes(category),
-              'btn-custom btn-outline-primary': !selectedCategories.includes(category),
+              'btn-custom btn-outline-primary':
+                !selectedCategories.includes(category),
             }"
             @click="toggleCategory(category)"
           >
@@ -126,8 +125,6 @@ const loadMore = () => {
     </div>
   </div>
 </template>
-
-
 
 <style scoped>
 .image-container {
@@ -196,8 +193,8 @@ const loadMore = () => {
 }
 
 .btn-selected {
-  background-color: #b3e5fc; 
-  border: 1px solid #0d6efd; 
+  background-color: #b3e5fc;
+  border: 1px solid #0d6efd;
   color: #0d6efd;
 }
 

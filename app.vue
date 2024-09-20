@@ -1,7 +1,3 @@
-<template>
-  <NuxtLayout> </NuxtLayout>
-</template>
-
 <script setup>
 useHead({
   title: "Image Slide",
@@ -26,3 +22,8 @@ useHead({
   ]
 })
 </script>
+<template>
+  <NuxtLayout> </NuxtLayout>
+</template>
+
+
