@@ -26,7 +26,11 @@ const toggleCategory = (category) => {
 const selectedSize = ref("");
 
 const selectSize = (size) => {
-  selectedSize.value = size;
+  if (selectedSize.value === size) {
+    selectedSize.value = ""; 
+  } else {
+    selectedSize.value = size; 
+  }
 };
 
 const loadMore = () => {
